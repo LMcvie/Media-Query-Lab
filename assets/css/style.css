@@ -1,0 +1,133 @@
+
+#grid-container
+{
+    display:grid;
+    grid-template-areas:
+    'header header'
+    'menu menu'
+    'today-main today-main'
+    'main main'
+    'footer footer';
+}
+
+header
+{
+    color:white;
+    grid-area:header;
+    background-color: rgb(112, 163, 214);
+    align-items: center;
+    text-align: center;
+}
+
+#menu
+{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    background-color: rgb(112, 163, 214);
+    grid-area:menu;
+
+    
+}
+main
+{   
+    grid-area: main;
+    margin: 0px;
+
+}
+
+
+li
+{
+    list-style: none;
+}
+#forecast-container
+{
+    display:grid;
+    grid-template-areas:
+    'Today Tuesday'
+    'Wednesday Thursday'
+    'Friday Saturday'
+    'Sunday Sunday';
+
+    background-color:aquamarine ;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+#today-container
+{
+    background-color: rgb(173, 238, 238);
+    grid-area: today-main;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    border: 2px outset black;
+}
+
+#Today
+{
+    grid-area: Today;
+    border: 2px solid gray;
+}
+
+#Tuesday
+{
+    grid-area: Tuesday;
+    border: 2px solid gray;   
+    
+}
+
+#Wednesday
+{
+    grid-area: Wednesday;
+    border: 2px solid gray;   
+}
+
+#Thursday
+{
+    grid-area: Thursday;
+    border: 2px solid gray;   
+}
+
+#Friday
+{
+    grid-area: Friday;
+    border: 2px solid gray;   
+}
+
+#Saturday
+{
+    grid-area: Saturday;
+    border: 2px solid gray;   
+}
+
+#Sunday
+{
+    grid-area: Sunday;
+    border: 2px solid gray;   
+    
+}
+
+footer
+{
+    color:white;
+    grid-area:footer;
+    text-align: center;
+    background-color: rgb(112, 163, 214);
+}
+
+
+img
+{
+    width: 50%;
+    height: 50%;
+}
+
+a:hover
+{
+    color:red;
+}

@@ -1,0 +1,16 @@
+@media screen and (min-width:1080px)
+{   
+
+    #forecast-container
+    {
+        display:flex;
+        flex-wrap:wrap;
+        display:grid;
+        grid-template-areas:
+        'Today Tuesday Wednesday'
+        'Thursday Friday Saturday'
+        'Sunday Sunday Sunday';
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
